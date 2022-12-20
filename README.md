@@ -4,5 +4,9 @@ This is a series of lessons on time series analysis with Python programming. Ori
 All trainees are required to have solid knowledge of <a href='https://github.com/MacroAnalyst/Linear_Algebra_With_Python'>linear algebra</a>, <a href='https://github.com/MacroAnalyst/Probability_Theory'>probability theory</a>, <a href='https://github.com/MacroAnalyst/Basic_Statistics_With_Python'>statistics</a> and <a href='https://github.com/MacroAnalyst/Basic_Econometrics_With_Python'>basic econometrics</a>. All analysts are researchers too, with these knowledge, you can freely read institutional or academic researches and internalize them into your own analystical framework.
 
 
-
-
+[Chapter 0 - Dates and Time in Python](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb)<br>
+[Chapter 1 - Time Series Manipulation](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%201%20-%20Time%20Series%20Manipulation.ipynb)<br>
+[Chapter 2 - Lag Operator and Difference Equation](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%202%20-%20Lag%20Operator%20and%20Difference%20Equations.ipynb)<br>
+[Chapter 3 - Simple and Log Returns](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%203%20-%20Simple%20and%20Log%20Returns.ipynb)<br>
+[Chapter 4 - Stationary Processes and Trend Removal](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%204%20-%20Stationary%20Processes%20and%20Trend%20Removal.ipynb)<br>
+[Chapter 5 - ARMA Models](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%205%20-%20ARIMA%20models.ipynb)<br>
