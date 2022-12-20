@@ -28,7 +28,7 @@ It is advised that you download all material and browse in your own computer, si
 [Chapter 5 - ARMA Models](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%205%20-%20ARIMA%20models.ipynb)<br>
 
 ### Part II
-[Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
+[Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
 
 ## Screen Captures
 ![mpt](https://user-images.githubusercontent.com/59842360/208608006-a768764a-a27f-406a-92ad-b93c967bf65f.jpg)
