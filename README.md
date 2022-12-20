@@ -28,5 +28,15 @@ It is advised that you download all material and browse in your own computer, si
 [Chapter 5 - ARMA Models](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%205%20-%20ARIMA%20models.ipynb)<br>
 
 ### Part II
-[Chapter 1 - Bond Valuation and Modern Portfolio Theory]([https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb))<br>
+[Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
+
+## Screen Captures
+![mpt](https://user-images.githubusercontent.com/59842360/208608006-a768764a-a27f-406a-92ad-b93c967bf65f.jpg)
+![rolling_mean](https://user-images.githubusercontent.com/59842360/208608011-e809831c-6064-4d0b-9605-83411e2c2697.jpg)
+![AR](https://user-images.githubusercontent.com/59842360/208608014-1987f121-8c38-4e23-8306-58aa80dd715a.jpg)
+![IRF](https://user-images.githubusercontent.com/59842360/208608019-c085a92b-7f0d-42b2-a7dd-6cef98eb5225.jpg)
+![log_division](https://user-images.githubusercontent.com/59842360/208608020-915c7d23-a2f7-4575-bb6e-b35a3dab7648.jpg)
+![fx_dist](https://user-images.githubusercontent.com/59842360/208608022-7b39827f-2972-45e9-8c9c-d15fc03ed5a1.jpg)
+![sp500](https://user-images.githubusercontent.com/59842360/208608024-1d824637-9458-49c4-a7bc-7b7da1778513.jpg)
+![diag](https://user-images.githubusercontent.com/59842360/208608026-94e124d4-257d-41fd-b7c5-ef0c9fbd44e2.jpg)
 
