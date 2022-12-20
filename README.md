@@ -35,7 +35,7 @@ It is advised that you download all material and browse in your own computer, si
 ![rolling_mean](https://user-images.githubusercontent.com/59842360/208608011-e809831c-6064-4d0b-9605-83411e2c2697.jpg)
 ![AR](https://user-images.githubusercontent.com/59842360/208608014-1987f121-8c38-4e23-8306-58aa80dd715a.jpg)
 ![IRF](https://user-images.githubusercontent.com/59842360/208608019-c085a92b-7f0d-42b2-a7dd-6cef98eb5225.jpg)
-![log_division](https://user-images.githubusercontent.com/59842360/208608020-915c7d23-a2f7-4575-bb6e-b35a3dab7648.jpg)
+![log_division](https://user-images.githubusercontent.com/59842360/208608314-263ef029-dd1e-4ee1-b51d-0173a5c92c0e.jpg)
 ![fx_dist](https://user-images.githubusercontent.com/59842360/208608022-7b39827f-2972-45e9-8c9c-d15fc03ed5a1.jpg)
 ![sp500](https://user-images.githubusercontent.com/59842360/208608024-1d824637-9458-49c4-a7bc-7b7da1778513.jpg)
 ![diag](https://user-images.githubusercontent.com/59842360/208608026-94e124d4-257d-41fd-b7c5-ef0c9fbd44e2.jpg)
