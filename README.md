@@ -36,6 +36,10 @@ It is advised that you download all material and browse in your own computer, si
 
 
 ## Screen Captures
+![opt](https://user-images.githubusercontent.com/59842360/210231047-e4b55f54-3e7c-419a-a8a5-60b55e3a35db.jpg)
+![capm](https://user-images.githubusercontent.com/59842360/210231049-7d8357a2-9994-43f3-b060-968f6c10d1dd.jpg)
+![simu](https://user-images.githubusercontent.com/59842360/210231051-8be2bdaf-8859-4bf4-b5ad-67a7be1d8634.jpg)
+![ou](https://user-images.githubusercontent.com/59842360/210231052-7167e552-3dcd-4268-9a3f-f5967f69772c.jpg)
 ![mpt](https://user-images.githubusercontent.com/59842360/208608006-a768764a-a27f-406a-92ad-b93c967bf65f.jpg)
 ![rolling_mean](https://user-images.githubusercontent.com/59842360/208608011-e809831c-6064-4d0b-9605-83411e2c2697.jpg)
 ![AR](https://user-images.githubusercontent.com/59842360/208608014-1987f121-8c38-4e23-8306-58aa80dd715a.jpg)
