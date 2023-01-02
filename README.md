@@ -29,13 +29,9 @@ It is advised that you download all material and browse in your own computer, si
 
 ### Part II
 [Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
-
 [Chapter 2 - Capital Assets Pricing Model (CAPM)](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%202%20-%20CAPM.ipynb)<br>
-
 [Chapter 3 - Options Pricing](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%203%20-%20Options.ipynb)<br>
-
 [Chapter 4 - Rates Modeling](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%204%20-%20Rates%20Modelling.ipynb)<br>
-
 [Chapter 5 - Value at Risk (VaR)](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%205%20-%20Value%20at%20Risk%20%28VaR%29.ipynb)<br>
 
 
