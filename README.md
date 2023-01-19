@@ -26,6 +26,8 @@ It is advised that you download all material and browse in your own computer, si
 [Chapter 3 - Simple and Log Returns](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%203%20-%20Simple%20and%20Log%20Returns.ipynb)<br>
 [Chapter 4 - Stationary Processes and Trend Removal](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%204%20-%20Stationary%20Processes%20and%20Trend%20Removal.ipynb)<br>
 [Chapter 5 - ARMA Models](https://nbviewer.org/github/weijie-chen/Time-Series-Analysis-With-Python/blob/main/Chapter%205%20-%20ARIMA%20models.ipynb)<br>
+[Chapter 6 - ARCH and GARCH Models](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/Chapter%206%20-%20ARCH%20and%20GARCH.ipynb)<br>
+[Chapter 16 - ARCH and GARCH Models](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/Chapter%2016%20-%20Implementing%20Technical%20Analysis.ipynb)<br>
 
 ### Part II
 [Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
