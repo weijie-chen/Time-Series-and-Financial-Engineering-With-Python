@@ -30,7 +30,7 @@ It is advised that you download all material and browse in your own computer, si
 [Chapter 16 - Implementing Technical Indicators](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/Chapter%2016%20-%20Implementing%20Technical%20Analysis.ipynb)<br>
 
 ### Part II
-[Chapter 0 - Wiener Process and Random Walk](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb)
+[Chapter 0 - Wiener Process and Random Walk](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/Chapter%200%20-%20Dates%20And%20Time%20In%20Python.ipynb)<br>
 [Chapter 1 - Bond Valuation and Modern Portfolio Theory](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%201.%20Bond%20and%20Modern%20Portfolio%20Theory.ipynb)<br>
 [Chapter 2 - Capital Assets Pricing Model (CAPM)](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%202%20-%20CAPM.ipynb)<br>
 [Chapter 3 - Options Pricing](https://nbviewer.org/github/weijie-chen/Time-Series-and-Financial-Engineering-With-Python/blob/main/FinEng%20Chapter%203%20-%20Options.ipynb)<br>
