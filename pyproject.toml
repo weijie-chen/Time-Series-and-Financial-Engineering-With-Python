@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "time-series-and-financial-engineering"
+version = "0.1.0"
+description = "Tutorial on time series and financial engineering"
+authors = ["weijie-chen <weijiechen00@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter-black = "^0.3.4"
+black = "^24.4.2"
+pandas = "^2.2.2"
+numpy = "^1.26.0"
+matplotlib = "^3.9.0"
+scipy = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -25,7 +25,16 @@ I use poetry to management environment, if you happen to use VS code like me, pl
 4. Reload profile by ```. $profile```.
 5. If you are on your personal computer ```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser``` to unstrict your execution policy and choose Y.
 6. Resume the default restricted policy for security ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
-7. Now check ```poetry --version```, if you see the version, then good to go.
+7. Now check ```poetry --version```, if you see the version printed, then means we succeed in setting alias.
+8. You choose to use ```poetry update```, or just manage version at your own convenience.
+9. Download python 3.12 or anything version higher ```Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe" -OutFile "python-3.12.0-amd64.exe"```.
+10. This command will install python ```Start-Process -FilePath ".\python-3.12.0-amd64.exe" -ArgumentList "InstallAllUsers=1 PrependPath=1" -Wait```.
+11. According to my installed directory, we will let poetry to use the newly installed Python ```poetry env use "C:\Program Files\Python312\python.exe"```.
+12. Enter ```poetry shell```, check ```python --version```.
+13. Do ```poetry install```, this should create poetry.lock accoring to poetry toml.
+14. ```poetry run python -m ipykernel install --user --name=poetry-env --display-name "Python (Poetry)"``` will register and create Jupyter kernel.
+15. ```poetry env info -p``` will print out the path of this kernel.
+16. Give this path to "Select Python Interpretor" menu.
 
 ## Contents
 It is advised that you download all material and browse in your own computer, since nbviewer has persistent LaTeX rendering errors.
