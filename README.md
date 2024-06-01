@@ -2,20 +2,30 @@
 # Time Series Analysis and Financial Engineering With Python
 This is a compound course on time series analysis, financial engineering and algorithmic trading featuring Python programming. Originally it was for night training sessions for new-hire in my previous institution (hedge fund), all quantitative analysts and macro analysts are supposed to have more than working knowlege of time series modelling, so this training session will discuss and demonstrate the underlying mathematical foundations, modelling and Python-related skills. 
 
-The tutorial splits in several parts, the Part I discusses various topics in time series analysis, the Part II will cover the classic financial engineering, the Part III discusses algorithmic trading implementation. Also there are some supplementary tutorials about algorithms and data structures as a starter reference for more complicated quant developing topics. 
+The tutorial splits in several parts, the Part I discusses various topics in time series analysis, the Part II will cover the classic financial engineering, the Part III discusses portfolio optimization and management, the Part IV discusses systematic trading. Also there are some supplementary tutorials about algorithms and data structures as a starter reference for more complicated quant developing topics. 
 
-All trainees are required to have solid knowledge of <a href='https://github.com/MacroAnalyst/Linear_Algebra_With_Python'>linear algebra</a>, <a href='https://github.com/MacroAnalyst/Probability_Theory'>probability theory</a>, <a href='https://github.com/MacroAnalyst/Basic_Statistics_With_Python'>statistics</a> and <a href='https://github.com/MacroAnalyst/Basic_Econometrics_With_Python'>basic econometrics</a>. All analysts are researchers too, with these knowledge, you can freely read institutional or academic researches and internalize them into your own analystical framework.
+All learners are required to have solid knowledge of <a href='https://github.com/MacroAnalyst/Linear_Algebra_With_Python'>linear algebra</a>, <a href='https://github.com/MacroAnalyst/Probability_Theory'>probability theory</a>, <a href='https://github.com/MacroAnalyst/Basic_Statistics_With_Python'>statistics</a> and <a href='https://github.com/MacroAnalyst/Basic_Econometrics_With_Python'>basic econometrics</a>. All analysts are researchers too, with these knowledge, you can freely read institutional or academic researches and internalize them into your own analystical framework.
 
 ## Prerequisites
-The attendees must have working knowledge of linear algrebra, statistics and probability theory, and ideally advanced econometrics skills too.
+The learners must have working knowledge of linear algrebra, statistics and probability theory, and ideally advanced econometrics skills too.
 
-And also the attendees are assumed to have constant exposure of
+And also the learners are assumed to have constant exposure of
 
 - [x] Python
 - [x] NumPy
 - [x] Matplotlib
 - [x] Statsmodels
 - [x] Pandas
+
+## Environment Setup
+I use poetry to management environment, if you happen to use VS code like me, please follow the steps below:
+1. In Windows powershell and install poetry ``` (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -p```
+2. Navigate to ```cd $env:APPDATA\Python\Scripts```, check if poetry being installed.
+3. Open a notepad ```notepad $profile``` and set alias for poetry ```Set-Alias poetry "C:\Users\user\AppData\Roaming\Python\Scripts\poetry.exe"``` in notepad, I prefered this way, because sometimes setting env path not working in windows.
+4. Reload profile by ```. $profile```.
+5. If you are on your personal computer ```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser``` to unstrict your execution policy and choose Y.
+6. Resume the default restricted policy for security ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
+7. Now check ```poetry --version```, if you see the version, then good to go.
 
 ## Contents
 It is advised that you download all material and browse in your own computer, since nbviewer has persistent LaTeX rendering errors.
