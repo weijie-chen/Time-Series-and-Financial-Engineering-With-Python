@@ -8,11 +8,14 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 jupyter-black = "^0.3.4"
-black = "^24.4.2"
+black = {extras = ["jupyter"], version = "^24.4.2"}
 pandas = "^2.2.2"
 numpy = "^1.26.0"
 matplotlib = "^3.9.0"
 scipy = "^1.13.0"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.4"
+yfinance = "^0.2.40"
 
 
 [build-system]
