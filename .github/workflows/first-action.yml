@@ -24,6 +24,7 @@ jobs:
       run: |
         poetry run pytest -v
   Build:
+    needs: PR-Verification
     runs-on: ubuntu-latest
     steps:
     - name: Pretend to build
