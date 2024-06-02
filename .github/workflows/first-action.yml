@@ -23,3 +23,8 @@ jobs:
     - name: Unit tests
       run: |
         poetry run pytest -v
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pretend to build
+      run: echo "Building the project"
