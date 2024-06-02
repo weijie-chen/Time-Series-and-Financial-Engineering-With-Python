@@ -1,0 +1,10 @@
+name: Third Workflow
+on: 
+    pull_request:
+        types: [opened, synchronize, edited, reopened] 
+jobs: 
+    Display-Message-PR-Event:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Display message
+          run: echo "${{ toJSON(github.event) }}"
