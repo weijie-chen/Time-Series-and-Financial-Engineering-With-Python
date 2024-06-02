@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Get code
       uses: actions/checkout@v4
-    - name: Install dependencies
-      run: poetry install -v
     - name: Run tests
       run: poetry run pytest -v
+    - name: Install dependencies
+      run: poetry install -v
