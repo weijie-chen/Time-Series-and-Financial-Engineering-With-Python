@@ -1,12 +1,13 @@
 name: First Workflow
 on: push
 jobs:
-  test:
+  PR-Verification:
     runs-on: ubuntu-latest
     steps:
     - name: Get code
       uses: actions/checkout@v4
-    - name: Run tests
-      run: poetry run pytest -v
-    - name: Install dependencies
-      run: poetry install -v
+      
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        export PATH="$HOME/.local/bin:$PATH"
