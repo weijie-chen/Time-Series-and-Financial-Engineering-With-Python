@@ -1,11 +1,13 @@
 """Utility functions for financial engineering.
 """
 
-import pandas as pd
-import yfinance as yf
 import datetime as dt
-import scipy as sp
+
 import numpy as np
+import pandas as pd
+import scipy as sp
+import yfinance as yf
+
 from const.numbers import *
 
 

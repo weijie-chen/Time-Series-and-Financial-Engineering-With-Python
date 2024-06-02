@@ -20,11 +20,11 @@ jobs:
       run: |
         poetry install -v
 
-    - name: black formatting check
+    - name: Black formatting check
       run: |
         poetry run black --check .
 
-    - name: Import sort check
+    - name: Isort check
       run: |
         poetry run isort --check .
 
