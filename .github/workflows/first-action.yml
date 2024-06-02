@@ -6,8 +6,16 @@ jobs:
     steps:
     - name: Get code
       uses: actions/checkout@v4
-      
+
     - name: Install Poetry
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
         export PATH="$HOME/.local/bin:$PATH"
+    
+    - name: Install dependencies
+      run: |
+        poetry install -v
+    
+    - name: Run tests
+      run: |
+        poetry run pytest -v
