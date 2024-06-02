@@ -1,5 +1,5 @@
 name: First Workflow
-on: push
+on: [push, workflow_dispatch]
 jobs:
   PR-Verification:
     runs-on: ubuntu-latest

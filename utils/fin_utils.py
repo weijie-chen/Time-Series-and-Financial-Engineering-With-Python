@@ -1,5 +1,6 @@
 """Utility functions for financial engineering.
 """
+
 import pandas as pd
 import yfinance as yf
 import datetime as dt
@@ -84,5 +85,8 @@ def age_weight_series(num_period: int, decay_param: float) -> pd.Series:
         pd.Series: Series of weights.
     """
     return pd.Series(
-        [(decay_param**(i-1) * (1-decay_param))/(1-decay_param**num_period) for i in range(1, num_period+1)] 
+        [
+            (decay_param ** (i - 1) * (1 - decay_param)) / (1 - decay_param**num_period)
+            for i in range(1, num_period + 1)
+        ]
     )

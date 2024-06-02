@@ -1,7 +1,7 @@
-
 import os
 
-def print_directory_tree(root_dir, prefix=''):
+
+def print_directory_tree(root_dir, prefix=""):
     """
     Prints the directory tree starting from the root directory.
 
@@ -16,12 +16,12 @@ def print_directory_tree(root_dir, prefix=''):
     for index, item in enumerate(items):
         # Create the full path
         item_path = os.path.join(root_dir, item)
-        
+
         # Check if it's the last item in the current directory
-        is_last = (index == len(items) - 1)
+        is_last = index == len(items) - 1
 
         # Determine the prefix for the current item
-        current_prefix = '└── ' if is_last else '├── '
+        current_prefix = "└── " if is_last else "├── "
 
         # Print the current item with the appropriate prefix
         print(prefix + current_prefix + item)
@@ -29,8 +29,9 @@ def print_directory_tree(root_dir, prefix=''):
         # If the current item is a directory, recursively print its contents
         if os.path.isdir(item_path):
             # Use a new prefix for the next level
-            new_prefix = '    ' if is_last else '│   '
+            new_prefix = "    " if is_last else "│   "
             print_directory_tree(item_path, prefix + new_prefix)
 
-if __name__ == '__main__':
-    print_directory_tree(root_dir='.', prefix='')
+
+if __name__ == "__main__":
+    print_directory_tree(root_dir=".", prefix="")

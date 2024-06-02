@@ -3,6 +3,7 @@ import scipy.stats as sp
 
 from utils.fin_utils import calculate_parametric_var
 
+
 def test_calculate_parametric_var():
     # Define test inputs and expected outputs
     value = 1_000_000  # Portfolio value
