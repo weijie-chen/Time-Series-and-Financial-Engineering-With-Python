@@ -1,0 +1,8 @@
+name: Second Workflow
+on: [push, workflow_dispatch]
+jobs: 
+    Display-Message:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Display message
+          run: echo "{{ toJSON(github) }}"
