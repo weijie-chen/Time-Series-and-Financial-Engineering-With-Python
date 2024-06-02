@@ -16,6 +16,7 @@ scipy = "^1.13.0"
 jupyter = "^1.0.0"
 ipykernel = "^6.29.4"
 yfinance = "^0.2.40"
+pytest = "^8.2.1"
 
 
 [build-system]
