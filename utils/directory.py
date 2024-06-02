@@ -31,3 +31,6 @@ def print_directory_tree(root_dir, prefix=''):
             # Use a new prefix for the next level
             new_prefix = '    ' if is_last else '│   '
             print_directory_tree(item_path, prefix + new_prefix)
+
+if __name__ == '__main__':
+    print_directory_tree(root_dir='.', prefix='')
