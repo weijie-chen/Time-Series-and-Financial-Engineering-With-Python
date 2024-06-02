@@ -11,18 +11,27 @@ jobs:
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
         export PATH="$HOME/.local/bin:$PATH"
-      
+
     - uses: actions/setup-python@v5 
       with:
         python-version: '3.12' 
-    
+
     - name: Install dependencies
       run: |
         poetry install -v
-    
+
+    - name: black formatting check
+      run: |
+        poetry run black --check .
+
+    - name: Import sort check
+      run: |
+        poetry run isort --check .
+
     - name: Unit tests
       run: |
         poetry run pytest -v
+
   Build:
     needs: PR-Verification
     runs-on: ubuntu-latest
