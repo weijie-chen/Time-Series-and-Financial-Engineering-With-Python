@@ -47,3 +47,10 @@ jobs:
     steps:
     - name: Pretend to build
       run: echo "Building the project"
+
+  Deploy:
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pretend to deploy
+      run: echo "Deploying the project"
