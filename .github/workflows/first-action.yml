@@ -50,9 +50,15 @@ jobs:
   Build:
     needs: PR-Verification
     runs-on: ubuntu-latest
+    outputs:
+      build_output: ${{ steps.set_output.outputs.build_result }}
+
     steps:
     - name: Pretend to build
-      run: echo "Building the project"
+      id: set_output
+      run: |
+        echo "Building the project"
+        echo "::set-output name=build_result::successful"
 
   Deploy:
     needs: Build
@@ -69,4 +75,4 @@ jobs:
       run: |
         ls -als
         cat test_results.txt
-        echo "Deployment complete!"
+        echo "The build result was: ${{ needs.Build.outputs.build_output }}"
