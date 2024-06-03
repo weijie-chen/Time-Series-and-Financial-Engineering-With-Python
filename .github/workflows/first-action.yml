@@ -24,7 +24,15 @@ jobs:
     - uses: actions/setup-python@v5 
       with:
         python-version: '3.12' 
-
+    
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+      
     - name: Install dependencies
       run: |
         poetry install -v
@@ -59,6 +67,16 @@ jobs:
       run: |
         echo "Building the project"
         echo "::set-output name=build_result::successful"
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+    - name: Install dependencies
+      run: |
+        poetry install -v
 
   Deploy:
     needs: Build
