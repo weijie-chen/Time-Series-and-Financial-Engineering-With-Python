@@ -39,7 +39,13 @@ jobs:
 
     - name: Unit tests
       run: |
-        poetry run pytest -v
+        poetry run pytest -v > test_results.txt
+    
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: Pytest-results
+        path: test_results.txt
 
   Build:
     needs: PR-Verification
