@@ -1,4 +1,5 @@
-"""Constants for numbers.
+"""
+Constants for numbers.
 """
 
 TRADE_DAY_OF_YEAR = 252
