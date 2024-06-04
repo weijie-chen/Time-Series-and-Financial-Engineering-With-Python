@@ -46,10 +46,12 @@ jobs:
         poetry run isort --check .
 
     - name: Unit tests
+      id: unit_tests
       run: |
         poetry run pytest -v > test_results.txt
     
     - name: Upload test results
+      if: steps.unit_tests.outcome == 'failure'
       uses: actions/upload-artifact@v4
       with:
         name: Pytest-results
