@@ -12,7 +12,7 @@ def test_calculate_parametric_var():
     sigma = 0.2  # Annualized volatility (20%)
 
     # Calculate expected VaR using the formula
-    F_inv = sp.norm.ppf(100 - confidence)
+    F_inv = sp.norm.ppf(1 - confidence)
     expected_var = abs(value * (mu - sigma * F_inv))
 
     # Call the function

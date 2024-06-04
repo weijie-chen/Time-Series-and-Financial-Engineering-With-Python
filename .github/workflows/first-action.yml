@@ -100,3 +100,10 @@ jobs:
         ls -als
         cat test_results.txt
         echo "The build result was: ${{ needs.Build.outputs.build_output }}"
+  Report:
+    needs: [Build, Deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+    - name: Failure report
+      run: echo "The build failed. Please check the logs.
