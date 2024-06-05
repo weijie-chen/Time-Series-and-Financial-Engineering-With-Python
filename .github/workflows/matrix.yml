@@ -1,18 +1,32 @@
 name: Matrix Strategy Workflow
 on: [push, workflow_dispatch, pull_request]
+
 jobs: 
   PR-Verification:
     strategy:
       matrix:
         python-version: [3.10, 3.11, 3.12]
         operating-system: [ubuntu-latest, windows-latest, macOS-latest]
-    runs-on: $ {{ matrix.operating-system }}
+    runs-on: ${{ matrix.operating-system }}
     steps:
     - name: Get code
       uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
 
     - name: Install Poetry
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
         export PATH="$HOME/.local/bin:$PATH"
+        poetry env use python${{ matrix.python-version }}
 
+    - name: Install dependencies
+      run: |
+        poetry install -v
+
+    - name: Run tests
+      run: |
+        poetry run pytest -v
