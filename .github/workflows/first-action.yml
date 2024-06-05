@@ -24,7 +24,15 @@ jobs:
     - uses: actions/setup-python@v5 
       with:
         python-version: '3.12' 
-
+    
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+      
     - name: Install dependencies
       run: |
         poetry install -v
@@ -38,11 +46,13 @@ jobs:
         poetry run isort --check .
 
     - name: Unit tests
+      id: unit_tests
       run: |
         poetry run pytest -v > test_results.txt
     
     - name: Upload test results
-      uses: actions/upload-artifact@v2
+      if: failure() && steps.unit_tests.outcome == 'failure'
+      uses: actions/upload-artifact@v4
       with:
         name: Pytest-results
         path: test_results.txt
@@ -50,9 +60,29 @@ jobs:
   Build:
     needs: PR-Verification
     runs-on: ubuntu-latest
+    outputs:
+      build_output: ${{ steps.set_output.outputs.build_result }}
+
     steps:
     - name: Pretend to build
-      run: echo "Building the project"
+      id: set_output
+      run: |
+        echo "Building the project"
+        echo "::set-output name=build_result::successful"
+    - name: Cache dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-poetry-
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        export PATH="$HOME/.local/bin:$PATH"
+    - name: Install dependencies
+      run: |
+        poetry install -v
 
   Deploy:
     needs: Build
@@ -60,3 +90,22 @@ jobs:
     steps:
     - name: Pretend to deploy
       run: echo "Deploying the project"
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: Pytest-results
+        path: test_results.txt
+    - name: List results
+      run: |
+        ls -als
+        cat test_results.txt
+        echo "The build result was: ${{ needs.Build.outputs.build_output }}"
+  Report:
+    needs: [PR-Verification, Build, Deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+    - name: Failure report
+      run: |
+        echo "The build failed. Please check the logs."
+        echo "$ {{ toJSON(github) }}"
