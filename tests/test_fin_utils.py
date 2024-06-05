@@ -19,4 +19,4 @@ def test_calculate_parametric_var():
     calculated_var = calculate_parametric_var(value, confidence, mu, sigma)
 
     # Assert the result
-    assert calculated_var == pytest.approx(expected_varr, rel=1e-5)
+    assert calculated_var == pytest.approx(expected_var, rel=1e-5)
