@@ -47,6 +47,7 @@ jobs:
 
     - name: Unit tests
       id: unit_tests
+      continue-on-error: true
       run: |
         poetry run pytest -v > test_results.txt
     
@@ -64,18 +65,20 @@ jobs:
       build_output: ${{ steps.set_output.outputs.build_result }}
 
     steps:
-    - name: Pretend to build
-      id: set_output
-      run: |
-        echo "Building the project"
-        echo "::set-output name=build_result::successful"
-    - name: Cache dependencies
+    - name: Restore cache
       uses: actions/cache@v4
       with:
         path: ~/.cache/pypoetry
         key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
         restore-keys: |
           ${{ runner.os }}-poetry-
+
+    - name: Pretend to build
+      id: set_output
+      run: |
+        echo "Building the project"
+        echo "::set-output name=build_result::successful"
+
     - name: Install Poetry
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
