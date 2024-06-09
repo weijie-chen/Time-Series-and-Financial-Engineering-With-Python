@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 import scipy as sp
 import yfinance as yf
-
 from const.numbers import *
 
 

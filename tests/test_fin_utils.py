@@ -1,6 +1,5 @@
 import pytest
 import scipy.stats as sp
-
 from utils.fin_utils import calculate_parametric_var
 
 
